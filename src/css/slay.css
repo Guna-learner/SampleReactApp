@@ -1,0 +1,153 @@
+.slay
+{
+    width: 90%;
+    height: 100vh;
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit,50%);
+  grid-template-rows: 80% 20%;
+  align-items: center;
+  justify-content: start;
+ 
+ 
+}
+ .icon1,.icon2{
+    position: absolute;
+    left: 0px;
+}
+.s-left .icon1{
+    top: -100px;
+}
+.s-left .icon2{
+   top: 100px;
+   left: -30px;
+}
+.s-left .icon3{
+    position: absolute;
+   bottom: -100px;
+}
+.s-left{
+    display: grid;
+    align-items: end;
+    grid-template-columns: 100%;
+    grid-template-rows: 0.5fr 0.2fr 0.2fr 0.3fr;
+    color: white;
+    position: relative;
+    padding-left: 2em;
+}
+.s-right{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+
+.s-left h1{
+    width: 100%;
+    font-size: 3em;
+}
+
+.s-left h1:nth-child(5){
+    background: linear-gradient(to right,#e32980 ,#cc9beb,#cc9beb);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: none;
+}
+.s-left p{
+    font-size: 1.13em;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.s-left button{
+    color: white;
+    font-size: 1em;
+    width: max-content;
+    padding: 0.2em 0.6em;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    align-self: flex-start;
+    background: linear-gradient(to right,#e82a82 ,#ed7db1);;
+}
+.s-right img{
+    width: 100%;
+    /* height: 80%; */
+    object-fit: cover;
+}
+
+/* .arc{
+    width: 100%;
+    height: 20%;
+    display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  overflow: hidden;
+  border-radius: 30px 30px 0 0;
+ }
+ .arc img{
+   width: 100%;
+   height: 50vh;
+ } */
+
+
+@media screen and (max-width:763px) {
+
+    #home .part1{
+      
+        height: 100%;
+       
+    }
+    #home .part1 .slay{
+        margin-top: 2em;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    align-items: center;
+    }
+    #home .part1 .slay .s-left{
+        width: 80%;
+        height: 40%;
+        place-content: center;
+        justify-items: center;
+    }
+    #home .part1 .slay .s-left h1{
+ text-align: center;
+ font-size: 2.8em;
+ width: 125%;
+    }
+    #home .part1 .slay .s-left p{
+        text-align: center;
+        font-size: 1em;
+        width: 100%;
+    }
+    #home .part1 .slay .s-left button{
+        width: 130%;
+        padding: 1em 0em;
+        margin-left: -30px;
+    }
+    #home .part1 .slay .s-right{
+        width: 80%;
+        height: 60%;
+        align-items: start;
+        justify-content: flex-start;
+    }
+    #home .part1 .slay .s-right img{
+        height: 80%;
+    }
+    .s-left .icon1{
+        top: -20px;
+        width: 40px;
+        height: 40px;
+    }
+    .s-left .icon2{
+       top: 100px;
+       left: -30px;
+    }
+    .s-left .icon3{
+       bottom: -50px;
+       left: 0px;
+       width: 40px;
+       height: 40px;
+    }
+}

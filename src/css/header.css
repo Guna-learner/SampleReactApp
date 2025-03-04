@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Hind Siliguri", sans-serif;
+}
+.D-nav{
+    width: 100%;
+    /* height: 8vh; */
+    background-color:#170524 ;
+    display: grid;
+    grid-template-columns: 0.2fr 1fr 0.5fr;
+    grid-template-rows: 80px;
+ align-items: center;
+ justify-content: center;
+ justify-items: start;
+ align-content: center;
+ color: white;
+ border-bottom: 1px solid black;
+}
+.left h3{
+ margin-left: 55px;
+position: relative;
+}
+.left h3::before{
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  /* background-color: #e82a82; */
+position: absolute;
+border-radius: 50%;
+border-left: 3px solid #e82a82;
+border-top: 3px solid #e82a82;
+border-right: 3px solid transparent;
+border-bottom: 3px solid white;
+padding: 0.2em;
+  top: 0px;
+  left: -10px;
+}
+.middle ul{
+  width: 100%;
+display: flex;
+}
+ .middle ul li{
+  font-size: 0.9em;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin-left: 30px;
+}
+.right{
+  display: flex;
+
+}
+.c-btn{
+  background: linear-gradient(to right,#e82a82 ,#ed7db1);
+  display: flex;
+  align-items: center;
+}
+.c-btn .icon{
+  padding-left: 5px;
+ 
+}
+.c-btn,.l-btn{
+  width: max-content;
+  padding: 0.4em 0.7em;
+  border-radius: 5px;
+  margin-left: 1.4em;
+}
+.l-btn{
+  border: 1px solid #ed7db1;
+}
+.middle .icon{
+ margin-left: 8px;
+}
+.ham{
+  display: none;
+}
+
+@media screen and (max-width:1200px) {
+/* .D-nav{
+  width: max-content;
+} */
+
+}
+
+@media screen and (max-width:763px) {
+
+  .left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .left h3{
+   font-size: 1.7em;
+   margin-left: 30px;
+   font-weight: 500;
+   }
+  .D-nav{
+    display: flex;
+    justify-content: space-between;
+}
+  .D-nav .middle,.D-nav .right .c-btn , .right .l-btn{
+    display: none;
+        }
+  .ham{
+    width: 80px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+    /* background-color: aqua; */
+  }
+
+  .left h3::before{
+    top: 4px;
+    left: -10px;
+  }
+}
