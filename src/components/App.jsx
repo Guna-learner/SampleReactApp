@@ -15,7 +15,6 @@ const App = () => {
     <>
       <Header/>
        <Home/>
-    
        <Infinite/> 
        <Profile/>
        <Mission/>
